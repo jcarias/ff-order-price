@@ -1,20 +1,22 @@
 class Catalog {
-	constructor() {
-		this.catalogData = [];
-	}
+  constructor() {
+    this.catalogData = [];
+  }
 
-	addItem = item => {
-		if (item) {
-			catalogData.push(item);
-		}
-	};
+  addItem(item) {
+    if (item) {
+      this.catalogData.push(item);
+    }
+  }
 
-	findItemPrice = id => {
-		let foundItems = this.catalogData.filter(item => item.id === id);
-		if (foundItems.length > 0) {
-			return foundItems[0].price;
-		}
+  findItem(id) {
+    let foundItem = this.catalogData.find(item => item.id === id);
+    if (foundItem !== undefined) {
+      return foundItem;
+    }
 
-		throw new Error(`Error: item '${id}' not found in catalog!`);
-	};
+    throw new Error(`Error: item '${id}' was not found in catalog!`);
+  }
 }
+
+module.exports = Catalog;
