@@ -23,5 +23,6 @@
 	"homepage": "https://github.com/jcarias/ff-order-price#readme",
 	"devDependencies": {
 		"jest": "^23.6.0"
-	}
+	},
+	"dependencies": {}
 }
