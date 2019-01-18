@@ -1,24 +1,27 @@
 {
-  "name": "ff-order-price",
-  "version": "1.0.0",
-  "description": "A demo order price calculator",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jcarias/ff-order-price.git"
-  },
-  "keywords": [
-    "Node",
-    "Javascript",
-    "Farfetch"
-  ],
-  "author": "João Carias",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jcarias/ff-order-price/issues"
-  },
-  "homepage": "https://github.com/jcarias/ff-order-price#readme"
+	"name": "ff-order-price",
+	"version": "1.0.0",
+	"description": "A demo order price calculator",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jcarias/ff-order-price.git"
+	},
+	"keywords": [
+		"Node",
+		"Javascript",
+		"Farfetch"
+	],
+	"author": "João Carias",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jcarias/ff-order-price/issues"
+	},
+	"homepage": "https://github.com/jcarias/ff-order-price#readme",
+	"devDependencies": {
+		"jest": "^23.6.0"
+	}
 }
