@@ -1,5 +1,5 @@
 const fs = require("fs");
-const Catalog = require("./Catalog");
+const Catalog = require("./store/Catalog");
 const OrderItem = require("./OrderItem");
 const Order = require("./Order");
 
