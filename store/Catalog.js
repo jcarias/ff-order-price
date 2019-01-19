@@ -6,6 +6,8 @@ class Catalog {
   addItem(item) {
     if (item) {
       this.catalogData.push(item);
+    } else {
+      throw new Error("Cannot add an empty object to the catalog.");
     }
   }
 
