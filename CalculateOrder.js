@@ -29,14 +29,10 @@ function run() {
     throw new Error("Too few arguments.");
   }
 
-  if (!fs.existsSync(catalogFile)) {
-    throw new Error(`Catalog file '${catalogFile}' not found!`);
-  } else {
-    let data = AppUtils.loadCatalogFromFile(catalogFile);
-    data.forEach(element => {
-      catalog.addItem(element);
-    });
-  }
+  let data = AppUtils.loadCatalogFromFile(catalogFile);
+  data.forEach(element => {
+    catalog.addItem(element);
+  });
 
   const userInputItems = args.slice(3, args.length);
   let userItems = parseUserInputItems(userInputItems);

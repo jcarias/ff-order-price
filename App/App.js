@@ -2,6 +2,14 @@ const fs = require("fs");
 const OrderItem = require("./orders/OrderItem");
 
 function loadCatalogFromFile(file) {
+  if (!file) {
+    throw new Error("No file supplied");
+  }
+
+  if (!fs.existsSync(file)) {
+    throw new Error(`Catalog file '${file}' not found!`);
+  }
+
   let data = fs.readFileSync(file, "UTF-8");
 
   let lines = data.split(/\r?\n/);
