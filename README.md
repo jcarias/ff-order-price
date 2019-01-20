@@ -66,7 +66,7 @@ Total: 4151,25
 
 ## Test Support
 
-This App has been developed using Test-driven Development (TDD) process. Unit and integration test have been made using the [Jest library]().
+This App has been developed using Test-driven Development (TDD) process. Unit and integration test have been made using the [Jest library](https://jestjs.io/en/).
 
 ### Coverage
 
