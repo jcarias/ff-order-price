@@ -63,3 +63,34 @@ Total: 4151,25
 - A catalog file must be well formatted.
 - The product IDs supplied must exist in the catalog file.
 - The product order quantities must be below or equal the stock quantities in the catalog.
+
+## Test Support
+
+This App has been developed using Test-driven Development (TDD) process. Unit and integration test have been made using the [Jest library]().
+
+### Coverage
+
+Below there is the test coverage report.
+
+| File         | % Stmts | % Branch | % Funcs | % Lines |  Uncovered Line #s |
+| ------------ | ------: | -------: | ------: | ------: | -----------------: |
+| All files    |   81.25 |       70 |   93.75 |   80.95 |                    |
+| App          |   59.26 |    41.67 |      80 |   59.26 |                    |
+| App.js       |   59.26 |    41.67 |      80 |   59.26 | ... 21,22,23,31,57 |
+| App/orders   |    96.3 |    85.71 |     100 |    96.3 |                    |
+| Order.js     |   94.44 |       80 |     100 |   94.44 |                 30 |
+| OrderItem.js |     100 |      100 |     100 |     100 |                    |
+| App/store    |     100 |      100 |     100 |     100 |                    |
+| Catalog.js   |     100 |      100 |     100 |     100 |                    |
+
+Execute the tests with coverage support using `npm`:
+
+```shell
+$ npm test --coverage
+```
+
+...or `yarn`:
+
+```shell
+$ yarn test --coverage
+```
