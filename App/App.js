@@ -58,4 +58,8 @@ function catalogItemLookup(catalog, item) {
   }
 }
 
-module.exports = { loadCatalogFromFile, buildOrderItems };
+module.exports = {
+  loadCatalogDataFromFile: loadCatalogFromFile,
+  buildOrderItems,
+  catalogItemLookup
+};

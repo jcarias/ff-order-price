@@ -23,13 +23,13 @@ function parseUserInputItems(userInputItems) {
 function run() {
   const args = process.argv;
   const catalogFile = args[2];
-  let catalog = new Catalog();
 
   if (args.length < 5) {
     throw new Error("Too few arguments.");
   }
 
-  let data = AppUtils.loadCatalogFromFile(catalogFile);
+  let catalog = new Catalog();
+  let data = AppUtils.loadCatalogDataFromFile(catalogFile);
   data.forEach(element => {
     catalog.addItem(element);
   });
@@ -37,13 +37,14 @@ function run() {
   const userInputItems = args.slice(3, args.length);
   let userItems = parseUserInputItems(userInputItems);
   let ordersItems = AppUtils.buildOrderItems(catalog, userItems);
-  //Compute order
   let order = new Order(ordersItems, VAT);
-  console.log(`Total: ${order.getOrderTotal()}`);
+
+  return `Total: ${order.getOrderTotal()}`;
 }
 
 try {
-  run();
+  let orderPrice = run();
+  console.log(orderPrice);
 } catch (error) {
   process.exitCode = 1;
   console.log(`There was a problem: ${error.message}`);
