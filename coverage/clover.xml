@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1547859054300" clover="3.2.0">
+  <project timestamp="1547859054300" name="All files">
+    <metrics statements="30" coveredstatements="30" conditionals="12" coveredconditionals="12" methods="9" coveredmethods="9" elements="51" coveredelements="51" complexity="0" loc="30" ncloc="30" packages="2" files="3" classes="3">
+      <package name="ff-order-price">
+        <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="5"/>
+        <file name="Order.js" path="/Users/joaocarias/Documents/WebProjects/exercise/ff-order-price/Order.js">
+          <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="5" count="7" type="stmt"/>
+          <line num="6" count="7" type="stmt"/>
+          <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
+          <line num="11" count="5" type="stmt"/>
+          <line num="12" count="5" type="stmt"/>
+          <line num="13" count="8" type="cond" truecount="2" falsecount="0"/>
+          <line num="14" count="7" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="20" count="4" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+        </file>
+        <file name="OrderItem.js" path="/Users/joaocarias/Documents/WebProjects/exercise/ff-order-price/OrderItem.js">
+          <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+          <line num="3" count="21" type="stmt"/>
+          <line num="4" count="21" type="cond" truecount="2" falsecount="0"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="7" count="18" type="stmt"/>
+          <line num="8" count="18" type="cond" truecount="2" falsecount="0"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="13" count="16" type="stmt"/>
+          <line num="17" count="15" type="stmt"/>
+          <line num="21" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="ff-order-price.store">
+        <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <file name="Catalog.js" path="/Users/joaocarias/Documents/WebProjects/exercise/ff-order-price/store/Catalog.js">
+          <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+          <line num="3" count="5" type="stmt"/>
+          <line num="7" count="7" type="cond" truecount="2" falsecount="0"/>
+          <line num="8" count="6" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="15" count="6" type="stmt"/>
+          <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
